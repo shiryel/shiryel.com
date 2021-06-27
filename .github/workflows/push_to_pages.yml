@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages
+on:
+  push:	
+    branches:	
+      - master
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest    
+    steps:
+
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 16.x
+
+    - name: Build and Export
+      run: |
+        npm install
+        npm run build
+      env:
+        CI: true
+
+    - name: Add CNAME
+      run: echo "www.shiryel.com" > build/CNAME
+
+    - name: Remove the trash of jekyll missing the files :)
+      run: touch build/.nojekyll
+
+    - name: Deploy to gh-pages
+      uses: s0/git-publish-subdir-action@develop
+      env:
+        REPO: self
+        BRANCH: gh-pages
+        FOLDER: build
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
