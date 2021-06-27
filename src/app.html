@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+  <head>
     <!-- Global Config -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" href="/favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.png" />
 
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="reset.css">
+    %svelte.head%
+  </head>
+  <body>
+    <div id="svelte">%svelte.body%</div>
+  </body>
 
-    <!-- Fonts 
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="reset.css">
+
+  <!-- Fonts 
     Usage:
-      font-family: 'Just Another Hand', cursive;
-      font-family: 'Nanum Pen Script', cursive;
-    -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-
-		%svelte.head%
-	</head>
-	<body>
-		<div id="svelte">%svelte.body%</div>
-	</body>
+    font-family: 'Just Another Hand', cursive;
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand" rel="stylesheet">
 </html>

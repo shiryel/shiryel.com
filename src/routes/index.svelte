@@ -1,6 +1,29 @@
 <script>
 </script>
 
+<svelte:head>
+  <title>Shiryel's Den</title>
+
+  <meta
+    name="description"
+    content="Shiryel Landpage" />
+  <meta name="keywords" content="shiryel" />
+
+  <meta property="og:title" content="Shiryel's Den" />
+  <meta
+    property="og:description"
+    content="A blazing fast fennec" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.shiryel.com/" />
+  <meta
+    property="og:image"
+    content="https://shiryel.com/images/logo-512.png" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@shiryel_" />
+  <meta name="twitter:creator" content="@shiryel_" />
+</svelte:head>
+
 <main>
 	<section>
 		<a class="b1" href="https://blog.shiryel.com">Blog</a>
