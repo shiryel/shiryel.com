@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <!-- Global Config -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="/favicon.png" />
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- Fonts 
+    Usage:
+      font-family: 'Just Another Hand', cursive;
+      font-family: 'Nanum Pen Script', cursive;
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+		
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-1ccc2090.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-15c4f0c2.js">
+		<link rel="modulepreload" href="/./_app/layout.svelte-a27600d7.js">
+		<link rel="modulepreload" href="/./_app/pages/index.svelte-7019f1b2.js">
+		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/index.svelte-7955c67c.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-1ccc2090.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/layout.svelte-a27600d7.js"),
+						import("/./_app/pages/index.svelte-7019f1b2.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<main class="svelte-docqle"><section class="svelte-docqle"><a class="b1 svelte-docqle" href="https://blog.shiryel.com">Blog</a>
+<a class="b2 svelte-docqle" href="projects">Projects (wip)</a>
+<a class="b3 svelte-docqle" href="artwork">Artwork (wip)</a>
+<a class="b4 svelte-docqle" href="about">About (wip)</a>
+<div class="mid svelte-docqle"><p class="svelte-docqle">Welcome to</p>
+	<p class="svelte-docqle">Shiryel&#39;s Den</p>
+	<p class="svelte-docqle">·</p>
+	<p class="press svelte-docqle">press a bean to continue</p></div>
+<a class="lower1 svelte-docqle" href="secret">.</a>
+<div class="lower2 svelte-docqle"></div></section>
+</main>
+
+
+
+	
+</div>
+	</body>
+</html>
